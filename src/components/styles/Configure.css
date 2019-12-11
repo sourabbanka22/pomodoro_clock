@@ -1,0 +1,85 @@
+.Configure {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 1rem 0;
+  }
+  .Configure label {
+    font-size: 2rem;
+    margin: 0 0.5rem;
+    text-transform: capitalize;
+  }
+  .Configure .ConfigureSession {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .Configure .ConfigureSession button {
+    width: 2rem;
+    height: 2rem;
+    color: var(--color-theme-lighter);
+    background: none;
+    border: none;
+  }
+  .Configure .ConfigureSession button svg {
+    width: 100%;
+    height: 100%;
+    fill: currentColor;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+  }
+  .Configure .ConfigureSession button:hover svg,
+  .Configure .ConfigureSession button:focus svg {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    color: var(--color-theme-light);
+  }
+  .Configure .ConfigureSession button:active svg {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+    color: var(--color-theme-light);
+  }
+  .Configure .ConfigureSession h2 {
+    font-size: 1.4rem;
+    margin: 0.5rem 0.75rem;
+  }
+  
+  @media (max-width: 600px) {
+  
+    .Configure {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin: 2rem 0;
+    }
+    .Configure .ConfigureSession {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+    }
+    .Configure .ConfigureSession button:nth-of-type(1) {
+      -webkit-box-ordinal-group: 2;
+          -ms-flex-order: 1;
+              order: 1;
+    }
+    .Configure .ConfigureSession button:nth-of-type(2) {
+      -webkit-box-ordinal-group: 0;
+          -ms-flex-order: -1;
+              order: -1;
+    }
+  }

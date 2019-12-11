@@ -1,0 +1,29 @@
+.Settings {
+    grid-column: span 3;
+    margin: 10vh 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 7em;
+    font-family: 'Share Tech Mono', monospace;
+    color: #ffffff;
+    text-align: center;
+    color: #daf6ff;
+    text-shadow: 0 0 15px rgba(10, 175, 230, 1),  0 0 15px rgba(10, 175, 230, 0);
+    
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 1rem;
+    border-top: 3px solid var(--color-theme-lighter);
+  }
+  
+  
+  @media (max-width: 600px) {
+    .Settings {
+      grid-column: span 1;
+      margin: 5vh 0;
+      text-align: center;
+    }
+  }

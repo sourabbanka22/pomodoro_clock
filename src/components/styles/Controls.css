@@ -1,0 +1,39 @@
+.Controls {
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 5vh 0 0;
+  }
+  .Controls button {
+    
+    width: 6.25rem;
+    height: 6.25rem;
+    border-radius: 50%;
+    
+    background: inherit;
+    border: none;
+    outline: none;
+    text-align: center;
+    color: #daf6ff;
+    -webkit-box-shadow: 0 0 0 2px var(--color-theme-white), 0 0 0 7px var(--color-theme-gray);
+    box-shadow: 0 0 0 2px var(--color-theme-white), 0 0 0 7px var(--color-theme-gray);  
+  }
+  .Controls button:hover,
+  .Controls button:focus {
+            box-shadow: 0 0 20px rgba(10, 175, 230, 1),  0 0 20px rgba(10, 175, 230, 0);
+  }
+  .Controls button:active {
+    background: var(--color-theme-light);
+    color: var(--color-theme-white);
+    -webkit-transform: scaleX(1.2) scaleY(1.08);
+            transform: scaleX(1.2) scaleY(1.08);
+  }
+  
+  
